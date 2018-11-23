@@ -97,7 +97,13 @@ ul li ul li{float:none;}
    <div class="mainbody">
         <img class="logo" src="https://www.baidu.com/img/bd_logo1.png">
         <div class="tubiao">
-        <input type="search" name="search" id="search" /><input type="submit" name="submit" id="submit"value="百度一下" /></div>
+            <form action="/index/" method="post">
+                {% csrf_token %}
+                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit"value="下载"/>
+            </form>
+
+            <p>{{ rlt }}</p>
+        </div>
    </div>
    <!--<div class="footer">-->
          <!--<div class="qrcode2">-->
