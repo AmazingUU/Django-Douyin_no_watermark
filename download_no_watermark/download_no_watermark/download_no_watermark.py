@@ -95,10 +95,7 @@ class Downloader(object):
         return sign
 
     def get_aweme_id(self,share_url):
-        headers = {
-            "User-Agent": "Aweme/2.8.0 (iPhone; iOS 11.0; Scale/2.00)"
-        }
-        r = requests.get(share_url, headers=headers, allow_redirects=False)
+        r = requests.get(share_url, headers=self.headers, allow_redirects=False)
         url = r.headers['Location']
         aweme_id = re.search(r'\d+', url).group()
         return aweme_id
