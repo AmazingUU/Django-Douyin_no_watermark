@@ -50,6 +50,14 @@ ul li ul li{float:none;}
 
 <body>
 <div class="wrap">
+<script type="text/javascript">
+function copyText() {
+  var input = document.getElementById("input");
+  input.select(); // 选中文本
+  document.execCommand("copy"); // 执行浏览器复制命令
+  alert("复制成功");
+}
+</script>
    <!--<div class="header">-->
      <!--<ul>-->
          <!--<li><a href="#" class="font3">更多产品</a></li>-->
@@ -69,12 +77,17 @@ ul li ul li{float:none;}
         <div class="tubiao">
             <form action="/index/" method="post">
                 {% csrf_token %}
-                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit"value="下载"/>
+                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit"value="解析视频"/>
             </form>
 
 
         </div>
-       <div class="tubiao">{{ rlt }}</div>
+       {% if rlt %}
+            <div class="tubiao">
+               下载地址:<textarea id="input"  style="width:630px;margin:50px 0 0 0;">{{ rlt }}</textarea>
+               <a href="" onclick="copyText();return false">点击复制下载地址</a>
+            </div>
+        {% endif %}
    </div>
    <!--<div class="footer">-->
          <!--<div class="qrcode2">-->

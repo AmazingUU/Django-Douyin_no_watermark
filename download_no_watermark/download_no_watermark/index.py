@@ -11,7 +11,8 @@ def index(request):
         downloader = Downloader()
         download_url = downloader.run(share_url)
         if download_url:
-            context['rlt'] = '下载地址:' + download_url
+            context['rlt'] = download_url
+            # return HttpResponseRedirect(download_url)
         else:
             context['rlt'] = '下载失败'
     return render(request, 'index.html',context)
