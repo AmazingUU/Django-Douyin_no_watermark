@@ -9,10 +9,11 @@ def index(request):
     if request.POST:
         share_url = request.POST['search']
         downloader = Downloader()
-        download_url = downloader.run(share_url)
+        download_url,desc = downloader.run(share_url)
         if download_url:
-            context['rlt'] = download_url
+            context['download_url'] = download_url
+            context['desc'] = desc
             # return HttpResponseRedirect(download_url)
         else:
-            context['rlt'] = '下载失败'
+            context['download_url'] = '下载失败'
     return render(request, 'index.html',context)

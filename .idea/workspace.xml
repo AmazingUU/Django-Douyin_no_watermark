@@ -4,6 +4,7 @@
     <list default="true" id="e1f7c587-b415-444f-be86-5c27bb448207" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download_no_watermark/download_no_watermark/download_no_watermark.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_no_watermark/download_no_watermark/download_no_watermark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download_no_watermark/download_no_watermark/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_no_watermark/download_no_watermark/index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download_no_watermark/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/download_no_watermark/templates/index.html" afterDir="false" />
     </list>
@@ -19,7 +20,7 @@
       <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="108">
               <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
@@ -49,7 +50,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
+            <state relative-caret-position="792">
               <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
                 <element signature="e#645#677#0" expanded="true" />
@@ -70,9 +71,19 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/download_no_watermark/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+            <state relative-caret-position="190">
+              <caret line="92" column="105" selection-start-line="92" selection-start-column="105" selection-end-line="92" selection-end-column="105" />
               <folding>
+                <element signature="e#2499#2505#0" expanded="true" />
+                <element signature="e#2505#2511#0" expanded="true" />
+                <element signature="e#2586#2592#0" expanded="true" />
+                <element signature="e#2623#2629#0" expanded="true" />
+                <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2639#2645#0" expanded="true" />
+                <element signature="e#2645#2651#0" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2794#2800#0" expanded="true" />
+                <element signature="e#2800#2806#0" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -82,8 +93,8 @@
       <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="504">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -91,8 +102,8 @@
       <file leaf-file-name="download_no_watermark.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/download_no_watermark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="2897">
+              <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -125,6 +136,7 @@
       <find>s-isindex-wrap</find>
       <find>div</find>
       <find>s-center-box</find>
+      <find>span</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,8 +154,8 @@
         <option value="$PROJECT_DIR$/download_no_watermark/download_no_watermark/search2.py" />
         <option value="$PROJECT_DIR$/download_no_watermark/download_no_watermark/urls.py" />
         <option value="$PROJECT_DIR$/download_no_watermark/templates/post.html" />
-        <option value="$PROJECT_DIR$/download_no_watermark/download_no_watermark/download_no_watermark.py" />
         <option value="$PROJECT_DIR$/download_no_watermark/download_no_watermark/index.py" />
+        <option value="$PROJECT_DIR$/download_no_watermark/download_no_watermark/download_no_watermark.py" />
         <option value="$PROJECT_DIR$/download_no_watermark/templates/index.html" />
       </list>
     </option>
@@ -181,6 +193,12 @@
               <item name="Django-Douyin_no_watermark" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Douyin_no_watermark" type="462c0819:PsiDirectoryNode" />
               <item name="download_no_watermark" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django-Douyin_no_watermark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django-Douyin_no_watermark" type="462c0819:PsiDirectoryNode" />
+              <item name="download_no_watermark" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -195,6 +213,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git\Project\Django-Douyin_no_watermark\download_no_watermark\static" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -207,17 +230,41 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="download_no_watermark" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Django-Douyin_no_watermark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/download_no_watermark/download_no_watermark" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/download_no_watermark/download_no_watermark/download_no_watermark.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.download_no_watermark" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24962178" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3294893" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -232,19 +279,19 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Python Console" order="8" />
     </layout-to-restore>
   </component>
@@ -588,7 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
+        <state relative-caret-position="792">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="e#645#677#0" expanded="true" />
@@ -612,7 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="108">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -629,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/download_no_watermark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="2897">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -639,16 +686,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_no_watermark/download_no_watermark/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="504">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/download_no_watermark/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+        <state relative-caret-position="190">
+          <caret line="92" column="105" selection-start-line="92" selection-start-column="105" selection-end-line="92" selection-end-column="105" />
           <folding>
+            <element signature="e#2499#2505#0" expanded="true" />
+            <element signature="e#2505#2511#0" expanded="true" />
+            <element signature="e#2586#2592#0" expanded="true" />
+            <element signature="e#2623#2629#0" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2639#2645#0" expanded="true" />
+            <element signature="e#2645#2651#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2794#2800#0" expanded="true" />
+            <element signature="e#2800#2806#0" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

@@ -26,10 +26,11 @@ class Downloader(object):
             resp = requests.post("https://aweme.snssdk.com/aweme/v1/aweme/detail/", params=params, data=post_data,
                                  headers=self.headers).json()
             download_url = resp['aweme_detail']['video']['play_addr']['url_list'][0]
+            desc = resp['aweme_detail']['desc']
             # r = requests.get(download_url)
             # with open('test.mp4', 'wb') as f:
             #     f.write(r.content)
-            return download_url
+            return download_url,desc
         except Exception as e:
             print('download Expection:',e)
             return None
@@ -102,6 +103,10 @@ class Downloader(object):
 
 
 # if __name__ == '__main__':
+#     downloader = Downloader()
+#     downloader.run('http://v.douyin.com/Rv7Jqn/')
+
+
 #     headers = {
 #         "User-Agent": "Aweme/2.8.0 (iPhone; iOS 11.0; Scale/2.00)"
 #     }

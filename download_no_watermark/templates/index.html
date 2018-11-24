@@ -2,12 +2,12 @@
 <html>
 <head>
 <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
-<title>模仿百度</title>
+<title>抖音去水印视频下载</title>
 <style>
 *{margin:0; padding:0;}
 .wrap{width:100%;}
 .header{width:100%; height:80px;}
-.mainbody{width:70%;height:620px;margin:0 auto;}
+.mainbody{width:70%;height:480px;margin:0 auto;}
 .footer{width:640px;height:100px;margin:0 auto;}
 div div ul li{float:right;}
 .font1{color: #333;
@@ -30,7 +30,7 @@ div div ul li{float:right;}
     background:#3385ff; color:#fff;
     text-decoration:none;}
 ul{list-style:none;position:absolute; top:20px;right:5px;}
-.logo{display:block;margin:75px auto 25px;width:270px;height:129px;}
+.logo{display:block;margin:75px auto 25px;width:170px;height:29px;}
 #submit{width:100px;height:36px;background:#3385ff; border:1px solid #06F;color:#fff;font-size:15px;}
 #search{width:526px;height:36px;}
 .tubiao{width:630px;margin:0 auto;}
@@ -38,11 +38,12 @@ ul{list-style:none;position:absolute; top:20px;right:5px;}
 .qrcode_img{float:left;}
 .qrcode{float:left;width:130px;height:65px;}
 .qrcode1{margin:0 20px;}
-span{color:#666;font:12px arial}
-span1{color:#666;}
+span{color:#666;font:12px arial;}
+span1{color:#666;font:12px arial;margin:0 auto 10px;}
 .text1{color:#272727;font:12px arial}
 .text2{color:#666;font:12px arial}
-.banquan{float:left;width:340px;padding:5px 0px; line-height:28px;}
+.banquan{width:340px;padding:5px 0px; line-height:28px;margin:auto;}
+p{width:630px;margin:10px auto;}
 ul li ul li{float:none;}
 
 </style>
@@ -55,7 +56,7 @@ function copyText() {
   var input = document.getElementById("input");
   input.select(); // 选中文本
   document.execCommand("copy"); // 执行浏览器复制命令
-  alert("复制成功");
+  alert("复制成功,请将地址复制到地址栏打开");
 }
 </script>
    <!--<div class="header">-->
@@ -73,7 +74,11 @@ function copyText() {
 
    <!--</div>-->
    <div class="mainbody">
-        <img class="logo" src="https://www.baidu.com/img/bd_logo1.png">
+        <img class="logo" src="">
+       <p>使用方法:<p>
+        <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
+       <p>&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析视频</p>
+       <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、将显示的下载地址粘贴地址栏</p>
         <div class="tubiao">
             <form action="/index/" method="post">
                 {% csrf_token %}
@@ -82,14 +87,15 @@ function copyText() {
 
 
         </div>
-       {% if rlt %}
+       {% if desc %}
             <div class="tubiao">
-               下载地址:<textarea id="input"  style="width:630px;margin:50px 0 0 0;">{{ rlt }}</textarea>
+                <p style="margin:50px atuo 20px auto;">视频名称:&nbsp;&nbsp;{{ desc }}</p>
+               下载地址:<textarea id="input" style="width:630px;height:50px;margin:10px 0 20px 0;resize:none;">{{ download_url }}</textarea>
                <a href="" onclick="copyText();return false">点击复制下载地址</a>
             </div>
-        {% endif %}
+       {% endif %}
    </div>
-   <!--<div class="footer">-->
+   <div class="footer">
          <!--<div class="qrcode2">-->
            <!--<div class="qrcode">-->
               <!--<div class="qrcode_img">-->
@@ -111,15 +117,12 @@ function copyText() {
               <!--</div>-->
            <!--</div>-->
          <!--</div>-->
+         <div class="banquan">
+            <p><span>视频归相关网站及作者所有，本站不存储任何视频及图片。</span>
+            </p>
+         </div>
 
-         <!--<div class="banquan">-->
-            <!--<p><a href="#" class="text1">把百度设为主页</a>   <a href="#" class="text1">关于百度</a>   <a href="#" class="text1">About Baidu</a>-->
-            <!--</p>-->
-            <!--<p><span>©2016 Baidu <a href="#" class="text2">使用百度前必读</a> <a href="#" class="text2">意见反馈</a> 京ICP证030173号</span>-->
-            <!--</p>-->
-         <!--</div>-->
-
-  <!--</div>-->
+  </div>
 </div>
 
 </body>
