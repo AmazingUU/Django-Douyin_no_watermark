@@ -1,10 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<title>抖音去水印视频下载</title>
+<style>
+*{margin:0; padding:0;}
+.wrap{width:100%;}
+.header{width:100%; height:80px;}
+.mainbody{width:70%;height:480px;margin:0 auto;}
+.footer{width:640px;height:100px;margin:0 auto;}
+div div ul li{float:right;}
+.font1{color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;}
+.font2{color: #333;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;}
+.font3{
+    display:block;
+    text-align:center;
+    font-size: 13px;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    margin:0 10px 0 20px;
+    background:#3385ff; color:#fff;
+    text-decoration:none;}
+ul{list-style:none;position:absolute; top:20px;right:5px;}
+.logo{display:block;margin:75px auto 25px;width:50px;height:50px;}
+#submit{width:100px;height:36px;background:#3385ff; border:1px solid #06F;color:#fff;font-size:15px;}
+#search{width:526px;height:36px;}
+.tubiao{width:630px;margin:0 auto;}
+.qrcode_text{float:left;height:46px;line-height:23px;font-size:12px;margin: 8px 0 0 10px;}
+.qrcode_img{float:left;}
+.qrcode{float:left;width:130px;height:65px;}
+.qrcode1{margin:0 20px;}
+span{color:#666;font:12px arial;}
+span1{color:#666;font:12px arial;margin:0 auto 10px;}
+.text1{color:#272727;font:12px arial}
+.text2{color:#666;font:12px arial}
+.banquan{width:340px;padding:5px 0px; line-height:28px;margin:auto;}
+p{width:630px;margin:10px auto;}
+ul li ul li{float:none;}
+
+</style>
 </head>
+
 <body>
-    <h1>{{ hello }}</h1>
+<div class="wrap">
+<script type="text/javascript">
+function copyText() {
+  var input = document.getElementById("input");
+  input.select(); // 选中文本
+  document.execCommand("copy"); // 执行浏览器复制命令
+  alert("复制成功,请将地址复制到地址栏打开");
+}
+
+function download(url){
+    window.open(url);
+}
+/**
+ * 通用的打开下载对话框方法，没有测试过具体兼容性
+ * @param url 下载地址，也可以是一个blob对象，必选
+ * @param saveName 保存文件名，可选
+ */
+function openDownloadDialog(url, saveName)
+{
+    if(typeof url == 'object' && url instanceof Blob)
+    {
+        url = URL.createObjectURL(url); // 创建blob地址
+    }
+    var aLink = document.createElement('a');
+    aLink.href = url;
+    aLink.download = saveName || ''; // HTML5新增的属性，指定保存文件名，可以不要后缀，注意，file:///模式下不会生效
+    var event;
+    if(window.MouseEvent) event = new MouseEvent('click');
+    else
+    {
+        event = document.createEvent('MouseEvents');
+        event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    }
+    aLink.dispatchEvent(event);
+}
+</script>
+   <!--<div class="header">-->
+     <!--<ul>-->
+         <!--<li><a href="#" class="font3">更多产品</a></li>-->
+         <!--<li><a href="#" class="font2">设置</a></li>-->
+         <!--<li><a href="#" class="font2">登录</a></li>-->
+         <!--<li><a href="#" class="font1">贴吧</a></li>-->
+         <!--<li><a href="#" class="font1">视频</a></li>-->
+         <!--<li><a href="#" class="font1">地图</a></li>-->
+         <!--<li><a href="#" class="font1">hao123</a></li>-->
+         <!--<li><a href="#" class="font1">新闻</a></li>-->
+         <!--<li><a href="#" class="font1">糯米</a></li>-->
+      <!--</ul>-->
+
+   <!--</div>-->
+   <div class="mainbody">
+       <img class="logo" src="https://github.com/AmazingUU/Django-Douyin_no_watermark/blob/master/download_no_watermark/static/logo.png?raw=true">
+       <p>使用方法:<p>
+        <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
+       <p>&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析视频</p>
+       <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、将显示的下载地址粘贴地址栏</p>
+        <div class="tubiao">
+            <form action="/douyin/" method="post">
+                {% csrf_token %}
+                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit"value="解析视频"/>
+            </form>
+
+
+        </div>
+       {% if desc %}
+            <!--<div class="tubiao">-->
+                <!--<p style="margin:50px atuo 20px auto;">视频名称:&nbsp;&nbsp;{{ desc }}</p>-->
+               <!--下载地址:<textarea id="input" style="width:630px;height:50px;margin:10px 0 20px 0;resize:none;">{{ download_url }}</textarea>-->
+               <a href="{{download_url}}" onclick="download({{download_url}})">点击下载</a>
+            <!--</div>-->
+       {% endif %}
+   </div>
+   <div class="footer">
+         <!--<div class="qrcode2">-->
+           <!--<div class="qrcode">-->
+              <!--<div class="qrcode_img">-->
+               <!--<img src="%$(X8H(91TWHYA0BA~R%$LL.png" width="60" height="60" />-->
+              <!--</div>-->
+              <!--<div class="qrcode_text">-->
+                 <!--<p><strong>手机百度</strong></p>-->
+                 <!--<p><span1>快人一步</span1></p>-->
+              <!--</div>-->
+           <!--</div>-->
+
+          <!--<div class="qrcode qrcode1">-->
+              <!--<div class="qrcode_img">-->
+               <!--<img src="8K%9KP~S_9B0FRS}UDU263A.png" width="60" height="60" />-->
+              <!--</div>-->
+              <!--<div class="qrcode_text">-->
+                 <!--<p><strong>百度糯米</strong></p>-->
+                 <!--<p><span1>一元大餐</span1></p>-->
+              <!--</div>-->
+           <!--</div>-->
+         <!--</div>-->
+         <div class="banquan">
+            <p><span>视频归相关网站及作者所有，本站不存储任何视频及图片。</span>
+            </p>
+         </div>
+
+  </div>
+</div>
+
 </body>
 </html>
