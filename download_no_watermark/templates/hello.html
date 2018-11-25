@@ -31,8 +31,9 @@ div div ul li{float:right;}
     text-decoration:none;}
 ul{list-style:none;position:absolute; top:20px;right:5px;}
 .logo{display:block;margin:75px auto 25px;width:50px;height:50px;}
-#submit{width:100px;height:36px;background:#3385ff; border:1px solid #06F;color:#fff;font-size:15px;}
-#search{width:526px;height:36px;}
+#submit{width:100px;height:36px;background:#85C1E9; border:1px solid;border-radius:10px;color:#fff;font-size:15px;}
+#download{display:block;width:150px;height:36px;background:#F1948A; border:1px solid;border-radius:10px;color:#fff;font-size:15px;margin:50px auto}
+#search{width:526px;height:36px;border:1px solid;border-radius:10px;}
 .tubiao{width:630px;margin:0 auto;}
 .qrcode_text{float:left;height:46px;line-height:23px;font-size:12px;margin: 8px 0 0 10px;}
 .qrcode_img{float:left;}
@@ -59,8 +60,8 @@ function copyText() {
   alert("复制成功,请将地址复制到地址栏打开");
 }
 
-function download(url){
-    window.open(url);
+function download(){
+    window.open({{ download_url|safe }});
 }
 /**
  * 通用的打开下载对话框方法，没有测试过具体兼容性
@@ -109,17 +110,17 @@ function openDownloadDialog(url, saveName)
         <div class="tubiao">
             <form action="/douyin/" method="post">
                 {% csrf_token %}
-                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit"value="解析视频"/>
+                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit" value="解析视频"/>
             </form>
 
 
         </div>
        {% if desc %}
-            <!--<div class="tubiao">-->
+            <div class="tubiao">
                 <!--<p style="margin:50px atuo 20px auto;">视频名称:&nbsp;&nbsp;{{ desc }}</p>-->
                <!--下载地址:<textarea id="input" style="width:630px;height:50px;margin:10px 0 20px 0;resize:none;">{{ download_url }}</textarea>-->
-               <a href="{{download_url}}" onclick="download({{download_url}})">点击下载</a>
-            <!--</div>-->
+               <input type="submit" id="download" onclick="download()" value="跳转到下载界面"/>
+            </div>
        {% endif %}
    </div>
    <div class="footer">
