@@ -1,9 +1,9 @@
 <!DOCTYPE>
 <html>
 <head>
-<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
-<title>抖音去水印视频下载</title>
-<style>
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+    <title>抖音去水印视频下载</title>
+    <style>
 *{margin:0; padding:0;}
 .wrap{width:100%;}
 .header{width:100%; height:80px;}
@@ -21,53 +21,63 @@ span{color:#666;font:12px arial;}
 p{width:630px;margin:10px auto;}
 ul li ul li{float:none;}
 
-</style>
-<script type="text/javascript">
+
+
+    </style>
+    <script type="text/javascript">
    if ({{ result_code|safe }} == -1){
     alert("输入错误");
     }
     if ({{ result_code|safe }} == -2){
     alert("解析失败");
     }
-</script>
+
+
+    </script>
 </head>
 
 <body>
 <div class="wrap">
-<script type="text/javascript">
+    <script type="text/javascript">
 function download(){
     window.open({{ download_url|safe }});
 }
-</script>
-   <div class="mainbody">
-       <img class="logo" src="https://github.com/AmazingUU/Django-Douyin_no_watermark/blob/master/download_no_watermark/static/logo.png?raw=true">
-       <p>使用方法:<p>
-       <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
-       <p>&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析视频</p>
-       <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、点击跳转到下载界面</p>
+
+
+    </script>
+    <div class="mainbody">
+        <img class="logo"
+             src="https://github.com/AmazingUU/Django-Douyin_no_watermark/blob/master/download_no_watermark/static/logo.png?raw=true">
+        <p>使用方法:
+        <p>
+        <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
+        <p>&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析视频</p>
+        <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、点击跳转到下载界面</p>
         <div class="tubiao">
             <form action="/douyin/" method="post">
                 {% csrf_token %}
-                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit" value="解析视频"/>
+                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit"
+                                                                       value="解析视频"/>
             </form>
 
         </div>
-       {% if desc %}
-            <div class="tubiao">
-               <input type="submit" id="download" onclick="download()" value="跳转到下载界面"/>
-            </div>
-       {% endif %}
-       <p style="width:630px;margin:30px auto 10px;">注意事项:<p>
-       <p>&nbsp;&nbsp;1、如遇403错误，请将地址复制到新窗口打开 </p>
-       <p>&nbsp;&nbsp;2、如遇视频无法播放，请重新点击解析视频</p>
-   </div>
-   <div class="footer">
-         <div class="banquan">
+        {% if desc %}
+        <div class="tubiao">
+            <input type="submit" id="download" onclick="download()" value="跳转到下载界面"/>
+        </div>
+        {% endif %}
+        <p style="width:630px;margin:30px auto 10px;">注意事项:
+        <p>
+        <p>&nbsp;&nbsp;1、如遇403错误，请将地址复制到新窗口打开 </p>
+        <p>&nbsp;&nbsp;2、如遇视频无法播放，请重新点击解析视频</p>
+    </div>
+    <div class="footer">
+        <div class="banquan">
             <p><span>视频归相关网站及作者所有，本站不存储任何视频及图片。</span>
             </p>
-         </div>
+        </div>
 
-  </div>
+    </div>
 </div>
 
 </body>
