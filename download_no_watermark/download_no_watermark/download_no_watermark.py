@@ -103,6 +103,9 @@ class Downloader(object):
 
 
 # if __name__ == '__main__':
+#     input = '#在抖音，记录美好生活##强颜欢笑飚演技 #飚演技飚演技 我们俩个这么好的朋友，我怎么会爱上你，你不会是爱上我了吧。@抖音小助手 http://v.douyin.com/RwSF8J/ 复制此链接，打开【抖音短视频】，直接观看视频！'
+#     print(re.search(r'(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]',input).group())
+
 #     downloader = Downloader()
 #     downloader.run('http://v.douyin.com/Rv7Jqn/')
 

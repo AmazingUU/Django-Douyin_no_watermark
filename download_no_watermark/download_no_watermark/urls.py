@@ -19,6 +19,6 @@ from . import view,index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('douyin/', view.hello),
-    path('index/', index.index),
+    path('douyin/', view.douyin),
+    # path('index/', index.index),
 ]
