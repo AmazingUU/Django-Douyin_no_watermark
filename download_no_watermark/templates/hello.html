@@ -7,7 +7,7 @@
 *{margin:0; padding:0;}
 .wrap{width:100%;}
 .header{width:100%; height:80px;}
-.mainbody{width:70%;height:480px;margin:0 auto;}
+.mainbody{width:70%;height:500px;margin:0 auto;}
 .footer{width:640px;height:100px;margin:0 auto;}
 div div ul li{float:right;}
 .font1{color: #333;
@@ -32,7 +32,7 @@ div div ul li{float:right;}
 ul{list-style:none;position:absolute; top:20px;right:5px;}
 .logo{display:block;margin:75px auto 25px;width:50px;height:50px;}
 #submit{width:100px;height:36px;background:#85C1E9; border:1px solid;border-radius:10px;color:#fff;font-size:15px;}
-#download{display:block;width:150px;height:36px;background:#F1948A; border:1px solid;border-radius:10px;color:#fff;font-size:15px;margin:50px auto}
+#download{display:block;width:150px;height:36px;background:#F1948A; border:1px solid;border-radius:10px;color:#fff;font-size:15px;margin:30px auto 0}
 #search{width:526px;height:36px;border:1px solid;border-radius:10px;}
 .tubiao{width:630px;margin:0 auto;}
 .qrcode_text{float:left;height:46px;line-height:23px;font-size:12px;margin: 8px 0 0 10px;}
@@ -104,9 +104,9 @@ function openDownloadDialog(url, saveName)
    <div class="mainbody">
        <img class="logo" src="https://github.com/AmazingUU/Django-Douyin_no_watermark/blob/master/download_no_watermark/static/logo.png?raw=true">
        <p>使用方法:<p>
-        <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
+       <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
        <p>&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析视频</p>
-       <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、将显示的下载地址粘贴地址栏</p>
+       <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、点击跳转到下载界面</p>
         <div class="tubiao">
             <form action="/douyin/" method="post">
                 {% csrf_token %}
@@ -122,6 +122,9 @@ function openDownloadDialog(url, saveName)
                <input type="submit" id="download" onclick="download()" value="跳转到下载界面"/>
             </div>
        {% endif %}
+       <p style="width:630px;margin:30px auto 10px;">注意事项:<p>
+       <p>&nbsp;&nbsp;1、如遇403错误，请将地址复制到新窗口打开 </p>
+       <p>&nbsp;&nbsp;2、如遇视频无法播放，请重新点击解析视频</p>
    </div>
    <div class="footer">
          <!--<div class="qrcode2">-->
