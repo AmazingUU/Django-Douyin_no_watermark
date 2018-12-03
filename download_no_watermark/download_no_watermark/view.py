@@ -3,7 +3,7 @@ import re
 
 from django.http import HttpResponse
 from django.shortcuts import render
-from download_no_watermark.download_no_watermark import Downloader
+from download_no_watermark.download import Downloader
 
 
 def douyin(request):

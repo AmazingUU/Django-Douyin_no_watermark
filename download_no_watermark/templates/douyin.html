@@ -52,7 +52,7 @@ function download(){
         <p>
         <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
         <p>&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析视频</p>
-        <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、点击跳转到下载界面</p>
+        <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、点击跳转到下载界面，在播放的视频上右键视频另存为，后缀名改为mp4后保存到本地</p>
         <div class="tubiao">
             <form action="/douyin/" method="post">
                 {% csrf_token %}
@@ -68,7 +68,7 @@ function download(){
         {% endif %}
         <p style="width:630px;margin:30px auto 10px;">注意事项:
         <p>
-        <p>&nbsp;&nbsp;1、如遇403错误，请将地址复制到新窗口打开 </p>
+        <p>&nbsp;&nbsp;1、如遇403错误，请将报错地址复制到新窗口打开 </p>
         <p>&nbsp;&nbsp;2、如遇视频无法播放，请重新点击解析视频</p>
     </div>
     <div class="footer">

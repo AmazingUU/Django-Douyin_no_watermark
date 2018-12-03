@@ -1,0 +1,202 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Dec  3 16:30:38 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 02 December 2018 15:09:15
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: iZuf66dzka2qshe1ml0fufZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/web/douyin/download_no_watermark
+detected binary path: /root/anaconda3/envs/django/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/douyin/download_no_watermark
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Oct 23 2018, 19:19:42)  [GCC 7.3.0]
+Python main interpreter initialized at 0x1984090
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1984090 pid: 12626 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12626)
+spawned uWSGI worker 1 (pid: 12627, cores: 2)
+[pid: 12627|app: 0|req: 1/1] 222.70.228.165 () {44 vars in 820 bytes} [Mon Dec  3 08:30:42 2018] GET / => generated 74 bytes in 55 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12627|app: 0|req: 2/2] 222.70.228.165 () {42 vars in 803 bytes} [Mon Dec  3 08:30:45 2018] GET /douyin/ => generated 2910 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 12627|app: 0|req: 3/3] 222.70.228.165 () {44 vars in 834 bytes} [Mon Dec  3 08:33:07 2018] GET /douyin/ => generated 2910 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 12627|app: 0|req: 4/4] 222.70.228.165 () {44 vars in 834 bytes} [Mon Dec  3 08:35:55 2018] GET /douyin/ => generated 2910 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 12627|app: 0|req: 5/5] 222.70.228.165 () {44 vars in 834 bytes} [Mon Dec  3 08:36:36 2018] GET /douyin/ => generated 2910 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+Mon Dec  3 08:37:10 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec  3 08:37:10 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Dec  3 16:37:33 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 02 December 2018 15:09:15
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: iZuf66dzka2qshe1ml0fufZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/web/douyin/download_no_watermark
+detected binary path: /root/anaconda3/envs/django/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/douyin/download_no_watermark
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Oct 23 2018, 19:19:42)  [GCC 7.3.0]
+Python main interpreter initialized at 0x27750b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x27750b0 pid: 12710 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12710)
+spawned uWSGI worker 1 (pid: 12711, cores: 2)
+[pid: 12711|app: 0|req: 1/1] 222.70.228.165 () {44 vars in 834 bytes} [Mon Dec  3 08:37:35 2018] GET /douyin/ => generated 2977 bytes in 56 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Mon Dec  3 08:37:58 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec  3 08:37:58 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Dec  3 16:38:46 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 02 December 2018 15:09:15
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: iZuf66dzka2qshe1ml0fufZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/web/douyin/download_no_watermark
+detected binary path: /root/anaconda3/envs/django/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/douyin/download_no_watermark
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Oct 23 2018, 19:19:42)  [GCC 7.3.0]
+Python main interpreter initialized at 0x144b0b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x144b0b0 pid: 12722 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12722)
+spawned uWSGI worker 1 (pid: 12723, cores: 2)
+[pid: 12723|app: 0|req: 1/1] 222.70.228.165 () {44 vars in 834 bytes} [Mon Dec  3 08:38:48 2018] GET /douyin/ => generated 2979 bytes in 58 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Mon Dec  3 08:40:13 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec  3 08:40:13 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Dec  3 16:50:16 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 02 December 2018 15:09:15
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: iZuf66dzka2qshe1ml0fufZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/web/douyin/download_no_watermark
+detected binary path: /root/anaconda3/envs/django/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/douyin/download_no_watermark
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Oct 23 2018, 19:19:42)  [GCC 7.3.0]
+Python main interpreter initialized at 0x1ddf0b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1ddf0b0 pid: 12752 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12752)
+spawned uWSGI worker 1 (pid: 12753, cores: 2)
+[pid: 12753|app: 0|req: 1/1] 222.70.228.165 () {44 vars in 834 bytes} [Mon Dec  3 08:50:18 2018] GET /douyin/ => generated 3000 bytes in 56 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 12753|app: 0|req: 2/2] 222.70.228.165 () {38 vars in 677 bytes} [Mon Dec  3 08:51:01 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12753|app: 0|req: 3/3] 222.70.228.165 () {40 vars in 720 bytes} [Mon Dec  3 08:51:08 2018] GET /douyin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 1)
+[pid: 12753|app: 0|req: 4/4] 222.70.228.165 () {40 vars in 722 bytes} [Mon Dec  3 08:51:08 2018] GET /douyin/ => generated 3000 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 12753|app: 0|req: 5/5] 222.70.228.165 () {38 vars in 616 bytes} [Mon Dec  3 08:51:08 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12753|app: 0|req: 6/6] 222.70.228.165 () {48 vars in 919 bytes} [Mon Dec  3 08:52:13 2018] POST /douyin/ => generated 3462 bytes in 1262 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+Mon Dec  3 09:06:46 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec  3 09:06:46 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Dec  3 17:07:27 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 02 December 2018 15:09:15
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: iZuf66dzka2qshe1ml0fufZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/web/douyin/download_no_watermark
+detected binary path: /root/anaconda3/envs/django/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/douyin/download_no_watermark
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Oct 23 2018, 19:19:42)  [GCC 7.3.0]
+Python main interpreter initialized at 0x11920b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x11920b0 pid: 12796 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12796)
+spawned uWSGI worker 1 (pid: 12797, cores: 2)
+[pid: 12797|app: 0|req: 1/1] 222.70.228.165 () {44 vars in 834 bytes} [Mon Dec  3 09:07:48 2018] GET /douyin/ => generated 3000 bytes in 56 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
