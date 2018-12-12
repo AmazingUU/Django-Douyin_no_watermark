@@ -8,5 +8,3 @@
 本项目仅供学习使用，不用做任何其他途径
 
 [1]:http://www.amazinguu.top:8000/douyin/ 
-
-https://segmentfault.com/a/1190000014361352
