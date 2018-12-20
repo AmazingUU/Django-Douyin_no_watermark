@@ -51,7 +51,7 @@ def wenku(request):
         if share_url:
             share_url = share_url.group()
             downloader = WenkuDownloader()
-            file_name,path = downloader.run(share_url)
+            file_name, path = downloader.run(share_url)
             if file_name:
                 # the_file_name = '11.png'  # 显示在弹出对话框中的默认的下载文件名
                 # filename = 'media/uploads/11.png'  # 要下载的文件路径
