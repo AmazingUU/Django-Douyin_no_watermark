@@ -20,5 +20,5 @@ from . import view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('douyin/', view.douyin),
-    # path('index/', index.index),
+    path('wenku/', view.wenku),
 ]

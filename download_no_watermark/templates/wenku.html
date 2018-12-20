@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+<head>
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+    <title>百度文库文章下载</title>
+    <style>
+*{margin:0; padding:0;}
+.wrap{width:100%;}
+.header{width:100%; height:80px;}
+.mainbody{width:70%;height:500px;margin:0 auto;}
+.footer{width:640px;height:100px;margin:0 auto;}
+div div ul li{float:right;}
+ul{list-style:none;position:absolute; top:20px;right:5px;}
+.logo{display:block;margin:75px auto 25px;width:50px;height:50px;}
+#submit{width:100px;height:36px;background:#85C1E9; border:1px solid;border-radius:10px;color:#fff;font-size:15px;}
+#download{display:block;width:150px;height:36px;background:#F1948A; border:1px solid;border-radius:10px;color:#fff;font-size:15px;margin:30px auto 0}
+#search{width:526px;height:36px;border:1px solid;border-radius:10px;}
+.tubiao{width:630px;margin:0 auto;}
+span{color:#666;font:12px arial;}
+.banquan{width:340px;padding:5px 0px; line-height:28px;margin:auto;}
+p{width:630px;margin:10px auto;}
+p1{width:630px;margin:10px 100px auto;}
+ul li ul li{float:none;}
+
+
+
+    </style>
+    <script type="text/javascript">
+   if ({{ result_code|safe }} == -1){
+    alert("输入错误");
+    }
+    if ({{ result_code|safe }} == -2){
+    alert("下载失败");
+    }
+
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="mainbody">
+        <img class="logo"
+             src="https://github.com/AmazingUU/Django-Douyin_no_watermark/blob/master/download_no_watermark/static/logo.png?raw=true">
+        <p>使用方法:
+        <p>
+        <p>&nbsp;&nbsp;1、复制想要下载的百度文库文章的链接 </p>
+        <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析链接</p>
+        <div class="tubiao">
+            <form action="/wenku/" method="post">
+                {% csrf_token %}
+                <input type="search" name="search" id="search"/><input type="submit" name="submit" id="submit"
+                                                                       value="解析链接"/>
+            </form>
+
+        </div>
+        <p style="width:630px;margin:30px auto 10px;">注意事项:
+        <p>
+        <p>&nbsp;&nbsp;目前仅支持doc和txt格式 </p>
+    </div>
+    <div class="footer">
+        <div class="banquan">
+            <p><span>文档归相关网站及作者所有，本站不存储任何文档资料</span></p>
+            <p1><span>沪ICP备18045705号</span></p1>
+        </div>
+        <!--<div class="banquan">-->
+            <!--<p><span>沪ICP备18045705号</span>-->
+            <!--</p>-->
+        <!--</div>-->
+
+    </div>
+</div>
+
+</body>
+</html>

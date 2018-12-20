@@ -7,7 +7,7 @@ import re
 import requests
 
 
-class Downloader(object):
+class DouyinDownloader(object):
     def __init__(self):
         self.headers = {
             "User-Agent": "Aweme/2.8.0 (iPhone; iOS 11.0; Scale/2.00)"
