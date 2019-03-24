@@ -39,13 +39,13 @@ ul li ul li{float:none;}
 
 <body>
 <div class="wrap">
-    <script type="text/javascript">
-function download(){
-    window.open({{ download_url|safe }});
-}
+    <!--<script type="text/javascript">-->
+<!--function download(){-->
+    <!--window.open({{ download_url|safe }});-->
+<!--}-->
 
 
-    </script>
+    <!--</script>-->
     <div class="mainbody">
         <img class="logo"
              src="https://github.com/AmazingUU/Django-Douyin_no_watermark/blob/master/download_no_watermark/static/logo.png?raw=true">
@@ -53,7 +53,8 @@ function download(){
         <p>
         <p>&nbsp;&nbsp;1、打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接 </p>
         <p>&nbsp;&nbsp;2、将刚才复制的链接粘贴到下面的输入框，点击解析视频</p>
-        <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、点击跳转到下载界面，在播放的视频上右键视频另存为，后缀名改为mp4后保存到本地</p>
+        <!--<p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、点击跳转到下载界面，在播放的视频上右键视频另存为，后缀名改为mp4后保存到本地</p>-->
+        <p style="width:630px;margin:10px auto 30px;">&nbsp;&nbsp;3、稍等片刻即会弹出下载框，进行下载即可</p>
         <div class="tubiao">
             <form action="/douyin/" method="post">
                 {% csrf_token %}
@@ -62,15 +63,16 @@ function download(){
             </form>
 
         </div>
-        {% if desc %}
-        <div class="tubiao">
-            <input type="submit" id="download" onclick="download()" value="跳转到下载界面"/>
-        </div>
-        {% endif %}
+        <!--{% if desc %}-->
+        <!--<div class="tubiao">-->
+            <!--<input type="submit" id="download" onclick="download()" value="跳转到下载界面"/>-->
+        <!--</div>-->
+        <!--{% endif %}-->
         <p style="width:630px;margin:30px auto 10px;">注意事项:
         <p>
-        <p>&nbsp;&nbsp;1、如遇403错误，请将报错地址复制到新窗口打开 </p>
-        <p>&nbsp;&nbsp;2、如遇视频无法播放，请重新点击解析视频</p>
+        <p>&nbsp;&nbsp;1、如遇报错或长时间不弹出下载框，请重新点击解析视频 </p>
+        <p>&nbsp;&nbsp;1、如有疑问，可联系作者，邮箱:AmazingUU@163.com </p>
+        <!--<p>&nbsp;&nbsp;2、如遇视频无法播放，请重新点击解析视频</p>-->
     </div>
     <div class="footer">
         <div class="banquan">

@@ -103,6 +103,6 @@ class WenkuDownloader(object):
             return None
 
 
-if __name__ == "__main__":
-    download = Downloader()
-    download.run()
+# if __name__ == "__main__":
+#     download = Downloader()
+#     download.run()
